@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903b7d5d35aab16488a7d430936bea4d, type: 3}
+  m_Name: Jack Frost
+  m_EditorClassIdentifier: 
+  personaName: 11
+  arcana: 1
+  affinities: 0000000000000000000000000500000002000000000000000000000000000000000000000000000000000000
+  background: A winter fairy of European descent. He leaves ice patterns on windows
+    and nips people's noses. Though normally an innocent creature, he will freeze
+    his victims to death if provoked.
+  strength: 8
+  magic: 9
+  endurance: 7
+  agility: 9
+  luck: 7
