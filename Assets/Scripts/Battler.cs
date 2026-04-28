@@ -93,15 +93,28 @@ public class Battler : MonoBehaviour
     //Getters for other stuff
     public virtual int GetLevel() { return level; }
     //Getters for other stuff
-    public virtual Affinity GetAffinity(Element element) { return affinities[(int)element]; }
+    public virtual Affinity GetAffinity(Element element) 
+    {
+        if ((int)element > 11)
+            return Affinity.Neutral;
+        return affinities[(int)element]; 
+    }
 
     //HP-Control Methods
     public void TakeDamage(int amount)
     {
         currHp -= amount;
+        Mathf.Clamp(currHp, 0, maxHp);
     }
     public void TakeDamagePercent(int percent)
     {
         currHp -= (maxHp * percent);
+        Mathf.Clamp(currHp, 0, maxHp);
+    }
+
+    public void UseSp(int amount)
+    {
+        currSp -= amount;
+        Mathf.Clamp(currSp, 0, maxSp);
     }
 }

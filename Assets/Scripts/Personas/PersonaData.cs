@@ -32,10 +32,10 @@ public enum Affinity
 {
     Neutral,
     Resist,
-    Null,
+    Weak,
     Absorb,
     Repel,
-    Weak
+    Null
 }
 
 [CreateAssetMenu(fileName = "New Persona", menuName = "Persona")]

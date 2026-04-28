@@ -41,6 +41,8 @@ public class Persona
     //Getters for other stuff
     public Affinity GetAffinity(Element element)
     {
+        if ((int)element > 11)
+            return Affinity.Neutral;
         return affinities[(int)element];
     }
 }
