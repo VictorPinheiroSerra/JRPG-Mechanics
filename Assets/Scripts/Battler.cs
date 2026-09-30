@@ -16,6 +16,7 @@ public class Battler : MonoBehaviour
     //Name of the character
     [SerializeField] string charName;
     [SerializeField] protected int level = 1;
+    public bool isEnemy;
 
 
     [Header("----- Battle Stats -----")]
@@ -39,6 +40,7 @@ public class Battler : MonoBehaviour
     [SerializeField] int luck;
     //determines interactions with each elemental affinity
     [SerializeField] Affinity[] affinities = new Affinity[11];
+    [SerializeField] Skill[] skills = new Skill[8];
 
     [Header("----- Stat Changes -----")]
     //StateMachine for Attack buffs and debuffs (Tarukaja and Tarunda)
@@ -57,6 +59,7 @@ public class Battler : MonoBehaviour
     public bool isConcentrated;
 
     //Getters for stats
+    public int GetCurrentSP() { return currSp;  }
     public virtual int GetStrength()
     {
         if (atkBuff == BuffState.Buffed)
@@ -92,29 +95,29 @@ public class Battler : MonoBehaviour
 
     //Getters for other stuff
     public virtual int GetLevel() { return level; }
-    //Getters for other stuff
     public virtual Affinity GetAffinity(Element element) 
     {
         if ((int)element > 11)
             return Affinity.Neutral;
         return affinities[(int)element]; 
     }
+    public virtual Skill[] GetSkillList() { return skills; }
 
     //HP-Control Methods
     public void TakeDamage(int amount)
     {
         currHp -= amount;
-        Mathf.Clamp(currHp, 0, maxHp);
+        currHp = Mathf.Clamp(currHp, 0, maxHp);
     }
     public void TakeDamagePercent(int percent)
     {
         currHp -= (maxHp * percent);
-        Mathf.Clamp(currHp, 0, maxHp);
+        currHp = Mathf.Clamp(currHp, 0, maxHp);
     }
 
     public void UseSp(int amount)
     {
         currSp -= amount;
-        Mathf.Clamp(currSp, 0, maxSp);
+        currSp = Mathf.Clamp(currSp, 0, maxSp);
     }
 }

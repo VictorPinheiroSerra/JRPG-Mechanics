@@ -18,7 +18,7 @@ public class PhysicalSkill : Skill
         {
             crit = false;
             //checks if attack will hit
-            if (Random.Range(0, 100) < accuracy || isRepelled)
+            if (Random.Range(0, 100) < accuracy || isRepelled || single.isDowned)
             {
                 Affinity targetAffinity = single.GetAffinity(element);
                 if (!isRepelled &&

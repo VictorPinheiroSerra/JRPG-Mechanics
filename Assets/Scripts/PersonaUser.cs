@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Playables;
 using UnityEngine;
 
 public class PersonaUser : Battler
 {
+    [Header("----- Persona Stats -----")]
     [SerializeField] Persona activePersona;
     public override int GetStrength()
     {
@@ -50,4 +50,5 @@ public class PersonaUser : Battler
     public override int GetAgility() { return activePersona.GetAgility(); }
     public override int GetLuck() { return activePersona.GetLuck(); }
     public override Affinity GetAffinity(Element element) { return activePersona.GetAffinity(element); }
+    public override Skill[] GetSkillList() { return activePersona.GetSkillList(); }
 }

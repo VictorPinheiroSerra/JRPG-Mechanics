@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BattleManager : MonoBehaviour
 {
-    List<Battler> activeBattlers = new List<Battler>();
-    Battler currentBattler;
+    [SerializeField] List<AIBattler> activeBattlers = new List<AIBattler>();
+    [SerializeField] AIBattler currentBattler;
 
     private void Start()
     {
@@ -15,10 +15,10 @@ public class BattleManager : MonoBehaviour
 
     void PopulateActiveBattlers()
     {
-        Battler tempBattler;
+        AIBattler tempBattler;
         foreach (GameObject battlerObj in GameObject.FindGameObjectsWithTag("Battler"))
         {
-            if(battlerObj.TryGetComponent<Battler>(out tempBattler))
+            if(battlerObj.TryGetComponent<AIBattler>(out tempBattler))
             activeBattlers.Add(tempBattler);
         }
     }
@@ -27,11 +27,15 @@ public class BattleManager : MonoBehaviour
     {
         currentBattler = activeBattlers[0];
 
-        foreach (Battler active in activeBattlers)
+        foreach (AIBattler active in activeBattlers)
         {
-            if (active.GetAgility() > currentBattler.GetAgility())
+            if (active.battlerData.GetAgility() > currentBattler.battlerData.GetAgility())
                 currentBattler = active;
         }
+
+        currentBattler.DoTurnActions(); //later on this will return something telling me if this battler should get another turn or if a shift happened
+        //needs to wait for turn to be over (this Remove call might be moved to an EndTurn public method)
+        activeBattlers.Remove(currentBattler);
     }
 
 }

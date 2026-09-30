@@ -53,4 +53,6 @@ public abstract class Skill : ScriptableObject
     {
         return 0;
     }
+
+    public int GetCost() { return cost; }
 }

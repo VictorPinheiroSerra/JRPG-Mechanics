@@ -4,6 +4,7 @@ using System.Xml.Linq;
 using UnityEditor.Playables;
 using UnityEngine;
 
+[System.Serializable]
 public class Persona
 {
     [SerializeField] PersonaData data;
@@ -19,6 +20,7 @@ public class Persona
     //used in crit-rate calculation
     [SerializeField] int luck;
     [SerializeField] Affinity[] affinities = new Affinity[11];
+    [SerializeField] Skill[] skills = new Skill[8];
 
     public Persona(PersonaData source)
     {
@@ -45,4 +47,5 @@ public class Persona
             return Affinity.Neutral;
         return affinities[(int)element];
     }
+    public virtual Skill[] GetSkillList() { return skills; }
 }

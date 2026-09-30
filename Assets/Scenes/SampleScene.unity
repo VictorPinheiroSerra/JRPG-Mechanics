@@ -122,6 +122,176 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &5953897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5953898}
+  m_Layer: 0
+  m_Name: Player Team
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5953898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5953897}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 285447790}
+  - {fileID: 1657409025}
+  - {fileID: 1445027897}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &13532826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 13532827}
+  m_Layer: 0
+  m_Name: Enemy Team
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &13532827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13532826}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 536108368}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &285447789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 285447790}
+  - component: {fileID: 285447791}
+  - component: {fileID: 285447792}
+  m_Layer: 0
+  m_Name: Shin
+  m_TagString: Battler
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &285447790
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285447789}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5953898}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &285447791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285447789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb275242d2eeafc42b8e9608a464b8c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charName: 
+  level: 1
+  isEnemy: 0
+  maxHp: 100
+  currHp: 100
+  maxSp: 0
+  currSp: 0
+  strength: 0
+  magic: 0
+  endurance: 0
+  agility: 0
+  luck: 0
+  affinities: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  skills:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  atkBuff: 0
+  defBuff: 0
+  evaBuff: 0
+  isDowned: 0
+  isGuarding: 0
+  isCharged: 0
+  isConcentrated: 0
+  activePersona:
+    data: {fileID: 11400000, guid: 4499600b027e51b4c874d64f22759794, type: 2}
+    strength: 0
+    magic: 0
+    endurance: 0
+    agility: 0
+    luck: 0
+    affinities: 
+    skills:
+    - {fileID: 11400000, guid: abfce0ad2974fb24bb31a093c02d93f4, type: 2}
+  personaDeck: []
+--- !u!114 &285447792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285447789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f25d072dbb18b9468efd4dc7de29094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battlerData: {fileID: 285447791}
+  weightOffensiveSkills: 0
+  weightHitWeakness: 0
+  weightSpendSP: 0
+  weightMultiTarget: 0
+  knownData:
+    pairs: []
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +384,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1905383651
+--- !u!1 &536108367
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -222,108 +392,67 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1905383652}
-  - component: {fileID: 1905383655}
-  - component: {fileID: 1905383654}
-  - component: {fileID: 1905383653}
+  - component: {fileID: 536108368}
+  - component: {fileID: 536108370}
+  - component: {fileID: 536108369}
   m_Layer: 0
-  m_Name: TestObj
-  m_TagString: Untagged
+  m_Name: Cowardly Maya
+  m_TagString: Battler
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1905383652
+--- !u!4 &536108368
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1905383651}
+  m_GameObject: {fileID: 536108367}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 13532827}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1905383653
+--- !u!114 &536108369
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1905383651}
+  m_GameObject: {fileID: 536108367}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb275242d2eeafc42b8e9608a464b8c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f25d072dbb18b9468efd4dc7de29094, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charName: 
-  maxHp: 0
-  currHp: 0
-  maxSp: 0
-  currSp: 0
-  strength: 0
-  magic: 0
-  endurance: 0
-  agility: 0
-  luck: 0
-  atkBuff: 0
-  defBuff: 0
-  evaBuff: 0
-  isDowned: 0
-  isGuarding: 0
-  isCharged: 0
-  isConcentrated: 0
-  activePersona: {fileID: 0}
-  personaDeck: []
---- !u!114 &1905383654
+  battlerData: {fileID: 536108370}
+  weightOffensiveSkills: 0
+  weightHitWeakness: 0
+  weightSpendSP: 0
+  weightMultiTarget: 0
+  knownData:
+    pairs: []
+--- !u!114 &536108370
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1905383651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbc62d352d9f6b44c9995f02fdd82777, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  charName: 
-  maxHp: 0
-  currHp: 0
-  maxSp: 0
-  currSp: 0
-  strength: 0
-  magic: 0
-  endurance: 0
-  agility: 0
-  luck: 0
-  atkBuff: 0
-  defBuff: 0
-  evaBuff: 0
-  isDowned: 0
-  isGuarding: 0
-  isCharged: 0
-  isConcentrated: 0
-  activePersona: {fileID: 0}
---- !u!114 &1905383655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1905383651}
+  m_GameObject: {fileID: 536108367}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 63e9be1a9758c054fa6051efb9582ada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   charName: 
-  maxHp: 0
-  currHp: 0
+  level: 1
+  isEnemy: 0
+  maxHp: 100
+  currHp: 100
   maxSp: 0
   currSp: 0
   strength: 0
@@ -331,6 +460,16 @@ MonoBehaviour:
   endurance: 0
   agility: 0
   luck: 0
+  affinities: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  skills:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   atkBuff: 0
   defBuff: 0
   evaBuff: 0
@@ -338,9 +477,261 @@ MonoBehaviour:
   isGuarding: 0
   isCharged: 0
   isConcentrated: 0
+--- !u!1 &572099522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 572099523}
+  - component: {fileID: 572099524}
+  m_Layer: 0
+  m_Name: BattleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &572099523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572099522}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.312717, y: -3.5931706, z: 0.009166615}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &572099524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572099522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2b0eebf3be00442b58df7307bc15dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeBattlers: []
+  currentBattler: {fileID: 0}
+--- !u!1 &1445027896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1445027897}
+  - component: {fileID: 1445027899}
+  - component: {fileID: 1445027898}
+  m_Layer: 0
+  m_Name: Alice
+  m_TagString: Battler
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1445027897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445027896}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1, y: -1.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5953898}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1445027898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445027896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f25d072dbb18b9468efd4dc7de29094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battlerData: {fileID: 1445027899}
+  weightOffensiveSkills: 0
+  weightHitWeakness: 0
+  weightSpendSP: 0
+  weightMultiTarget: 0
+  knownData:
+    pairs: []
+--- !u!114 &1445027899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445027896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbc62d352d9f6b44c9995f02fdd82777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charName: 
+  level: 1
+  isEnemy: 0
+  maxHp: 100
+  currHp: 100
+  maxSp: 0
+  currSp: 0
+  strength: 0
+  magic: 0
+  endurance: 0
+  agility: 0
+  luck: 0
+  affinities: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  skills:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  atkBuff: 0
+  defBuff: 0
+  evaBuff: 0
+  isDowned: 0
+  isGuarding: 0
+  isCharged: 0
+  isConcentrated: 0
+  activePersona:
+    data: {fileID: 11400000, guid: 4499600b027e51b4c874d64f22759794, type: 2}
+    strength: 0
+    magic: 0
+    endurance: 0
+    agility: 0
+    luck: 0
+    affinities: 
+    skills: []
+--- !u!1 &1657409024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1657409025}
+  - component: {fileID: 1657409027}
+  - component: {fileID: 1657409026}
+  m_Layer: 0
+  m_Name: Satoshi
+  m_TagString: Battler
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1657409025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657409024}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1, y: 3.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5953898}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1657409026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657409024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f25d072dbb18b9468efd4dc7de29094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battlerData: {fileID: 1657409027}
+  weightOffensiveSkills: 0
+  weightHitWeakness: 0
+  weightSpendSP: 0
+  weightMultiTarget: 0
+  knownData:
+    pairs: []
+--- !u!114 &1657409027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657409024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbc62d352d9f6b44c9995f02fdd82777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charName: 
+  level: 1
+  isEnemy: 0
+  maxHp: 100
+  currHp: 100
+  maxSp: 0
+  currSp: 0
+  strength: 0
+  magic: 0
+  endurance: 0
+  agility: 0
+  luck: 0
+  affinities: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  skills:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  atkBuff: 0
+  defBuff: 0
+  evaBuff: 0
+  isDowned: 0
+  isGuarding: 0
+  isCharged: 0
+  isConcentrated: 0
+  activePersona:
+    data: {fileID: 11400000, guid: 4499600b027e51b4c874d64f22759794, type: 2}
+    strength: 0
+    magic: 0
+    endurance: 0
+    agility: 0
+    luck: 0
+    affinities: 
+    skills: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 1905383652}
+  - {fileID: 5953898}
+  - {fileID: 13532827}
+  - {fileID: 572099523}

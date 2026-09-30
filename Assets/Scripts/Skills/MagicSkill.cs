@@ -13,7 +13,7 @@ public class MagicSkill : Skill
         foreach (Battler single in target)
         {
             //checks if attack will hit
-            if (Random.Range(0, 100) < accuracy || isRepelled)
+            if (Random.Range(0, 100) < accuracy || isRepelled || single.isDowned)
             {
                 switch (single.GetAffinity(element))
                 {
